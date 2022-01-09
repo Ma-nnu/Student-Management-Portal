@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Portal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Management Portal</h2>
+        <div id="one">
+          <div class="one">
+            <h3>Student List</h3>
+            <button id="open" onclick="openStudentModal()">Add Student</button>
+          </div>
+          <div class="table">
+          <div class="table_details">
+            <table id="table">      
+            </table>
+          </div>
+        </div>
+        </div>
+          <div class="modal_parent" id="modal">
+          <div class="modal_container">
+            <div class="modal">
+              <h3>Add Student Form</h3>
+              <h3>Personal Information</h3>
+              <textarea id="pi" cols="30" rows="10"></textarea>
+              <h3>Educational Information</h3>
+              <textarea id="ei" cols="30" rows="10"></textarea>
+              <button id="close" onclick="closeStudentModal()">Save Details</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
